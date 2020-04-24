@@ -2,11 +2,11 @@ package model;
 
 public class Heels implements Item{
 
-	private int price;
-	private String productNum;
-	private String color;
-	private int size;
-	private int inStock;
+	private static int price;
+	private static String productNum;
+	private static String color;
+	private static int size;
+	private static int inStock;
 	
 	public Heels(int cost, String proNum, String pattern, int sizeOf, int stockNum) {
 		this.price=cost;
@@ -16,7 +16,7 @@ public class Heels implements Item{
 		this.inStock=stockNum;
 	}
 	
-	public int getPrice() {
+	public static int getPrice() {
 		return price;
 	}
 
@@ -24,7 +24,7 @@ public class Heels implements Item{
 		this.price = price;
 	}
 
-	public String getProductNum() {
+	public static String getProductNum() {
 		return productNum;
 	}
 
@@ -32,7 +32,7 @@ public class Heels implements Item{
 		this.productNum = productNum;
 	}
 
-	public String getColor() {
+	public static String getColor() {
 		return color;
 	}
 
@@ -40,14 +40,14 @@ public class Heels implements Item{
 		this.color = color;
 	}
 
-	public int getSize() {
+	public static int getSize() {
 		return size;
 	}
 
 	public void setSize(int size) {
 		this.size = size;
 	}
-	public int getInStock() {
+	public static int getInStock() {
 		return inStock;
 	}
 	public void setInstock(int inStock) {
